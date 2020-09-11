@@ -8,7 +8,7 @@ modules:
    type: hdb
    path: HDB
    requires:
-    - name: hdi_HDB
+    - name: hdi_HDBXX
       properties:
         TARGET_CONTAINER: ~{hdi-container-name}
 
@@ -24,10 +24,10 @@ modules:
 
 
 resources:
- - name: hdi_HDB
+ - name: hdi_HDBXX
    parameters:
       config:
-         schema: BIKESALES_06
+         schema: BIKESALES_XX
          database_id: 8c3c6778-d1bc-46ec-99fc-fdfe8778a3a2
    properties:
       hdi-container-name: ${service-name}
